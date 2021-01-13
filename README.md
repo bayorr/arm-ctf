@@ -1,7 +1,8 @@
 # arm-ctf
 An arm-compiled CTF challenge. The challenger is presented with an encrypted binary dump and the disassembly of the function used to encrypt the data. The challenger's task is to write their own program or script to decrypt the data. The revealed flag (password) will unlock the next challenge.
 
-In the `src` directory there are both the original program as well as accompanied (example) solutions.
+In the `src` directory there are both the original program as well as accompanied (example) solutions. Source binaries to generate the data dumps were compiled with _arm-linux-gnueabi-gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0_.
+
 
 ### Example usage from challenge_01:
 ```
