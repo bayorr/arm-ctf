@@ -1,0 +1,21 @@
+   105e8:	e3a03000 	mov	r3, #0
+   105ec:	e50b3028 	str	r3, [fp, #-40]	; 0xffffffd8
+   105f0:	ea00000d 	b	1062c <main+0xfc>
+   105f4:	e51b3028 	ldr	r3, [fp, #-40]	; 0xffffffd8
+   105f8:	e51b2020 	ldr	r2, [fp, #-32]	; 0xffffffe0
+   105fc:	e0823003 	add	r3, r2, r3
+   10600:	e5d33000 	ldrb	r3, [r3]
+   10604:	e223306b 	eor	r3, r3, #107	; 0x6b
+   10608:	e20310ff 	and	r1, r3, #255	; 0xff
+   1060c:	e51b2014 	ldr	r2, [fp, #-20]	; 0xffffffec
+   10610:	e51b3028 	ldr	r3, [fp, #-40]	; 0xffffffd8
+   10614:	e0823003 	add	r3, r2, r3
+   10618:	e1a02001 	mov	r2, r1
+   1061c:	e5c32000 	strb	r2, [r3]
+   10620:	e51b3028 	ldr	r3, [fp, #-40]	; 0xffffffd8
+   10624:	e2833001 	add	r3, r3, #1
+   10628:	e50b3028 	str	r3, [fp, #-40]	; 0xffffffd8
+   1062c:	e51b2028 	ldr	r2, [fp, #-40]	; 0xffffffd8
+   10630:	e51b301c 	ldr	r3, [fp, #-28]	; 0xffffffe4
+   10634:	e1520003 	cmp	r2, r3
+   10638:	baffffed 	blt	105f4 <main+0xc4>
